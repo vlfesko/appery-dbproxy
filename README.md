@@ -19,7 +19,7 @@ will be forced to be accessible only to creator.
 How it works
 ============
 
-DbProxy is Server Code script. It hooks singup service so every new user
+DbProxy is Server Code script. It hooks signup service so every new user
 is created with personal acl. Every new object created by user is updated
 to have user's personal acl.  It has an interface similar to database
 service with few differences (caused by Server Code limitations):
