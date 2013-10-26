@@ -1,7 +1,7 @@
 appery-dbproxy
 ==============
 
-Database proxy for appert.io platform
+Database proxy for appery.io platform
 
 What is this
 ============
@@ -54,11 +54,11 @@ alias name:
 Now you'll need to update all services: remove `X-Appery-Database-Id` parameter
 and uncheck `Header` checkbox for `X-Appery-Session-Token`.
 
-For all "..._update" and "..._delete" services additional setup should be
+For all "update" and "delete" services additional setup should be
 performed: request method should be changed to `post` and one additional
 parameter should be created - called `X-Appery-Request-Method` with default
-value of original service method: `UPDATE` for "..._update" service and
-`DELETE` for "..._delete" services. That's it! From this moment your
+value of original service method: `UPDATE` for "update" service and
+`DELETE` for "delete" services. That's it! From this moment your
 application will never send `X-Appery-Database-Id` header thus no one
 will have direct access to your data, and no one will be able to
 modify data not owned by him.
